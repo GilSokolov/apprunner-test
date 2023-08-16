@@ -2,7 +2,7 @@ const http = require("http");
 const https = require("https");
 const port = +process.env.PORT || 8080;
 https
-  .get("https://jsonplaceholder.typicode.com/todos/1", (resp) => {
+  .get(process.env.URL, (resp) => {
     let data = "";
 
     // A chunk of data has been received.
