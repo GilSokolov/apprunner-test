@@ -1,7 +1,7 @@
 const http = require("http");
 const https = require("https");
 const port = +process.env.PORT || 8080;
-https
+http
   .get(process.env.URL, (resp) => {
     let data = "";
 
